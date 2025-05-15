@@ -90,11 +90,15 @@ The IMU allows for frame stabilization. For instance, you are able to visualize 
 ```
 set the USB Mode as Android before connecting instal360 x3 to your laptop.
 ```
+Terminal 1:
 ```
 cd ~/Documents/instal360_ws/src/insta360_ros_driver
 ./setup.sh
+source ~/Documents/instal360_ws/install/setup.bash
+ros2 launch insta360_ros_driver bringup1.launch.py
 ```
+Terminal 2:
 ```
 source ~/Documents/instal360_ws/install/setup.bash
-ros2 launch insta360_ros_driver bringup.launch.py
+ros2 launch insta360_ros_driver bringup2.launch.py
 ```
