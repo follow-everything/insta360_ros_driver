@@ -102,3 +102,8 @@ Terminal 2:
 source ~/Documents/instal360_ws/install/setup.bash
 ros2 launch insta360_ros_driver bringup2.launch.py
 ```
+## how to build (zqy)
+```
+cd ~/Documents/instal360_ws
+colcon build --symlink-install
+```
