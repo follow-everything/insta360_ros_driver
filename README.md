@@ -1,10 +1,5 @@
 # insta360_ros_driver
 
-## note from zqy
-```
-set the USB Mode as Android before connecting instal360 x3 to your laptop.
-```
-
 A ROS driver for the Insta360 cameras. This driver is tested on Ubuntu 22.04 with ROS2 Humble. The driver has also been verified on the Insta360 X2 and X3 cameras.
 
 For X4 cameras, see this [fix](https://github.com/ai4ce/insta360_ros_driver/issues/13#issuecomment-2727005037)
@@ -84,6 +79,24 @@ The IMU allows for frame stabilization. For instance, you are able to visualize 
 
 ![IMU](https://github.com/user-attachments/assets/02b50cad-8415-4dde-9014-9ab3a4d415b9)
 
+
 ## Star History
 
 [![Star History Chart](https://api.star-history.com/svg?repos=ai4ce/insta360_ros_driver&type=Date)](https://star-history.com/#ai4ce/insta360_ros_driver&Date)
+
+
+
+
+# note from zqy
+```
+set the USB Mode as Android before connecting instal360 x3 to your laptop.
+```
+
+## how to run
+```
+cd ~/ros2_ws/src/insta360_ros_driver
+./setup.sh
+```
+```
+ros2 launch insta360_ros_driver bringup.launch
+```
