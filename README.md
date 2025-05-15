@@ -94,6 +94,8 @@ Terminal 1:
 ```
 cd ~/Documents/instal360_ws/src/insta360_ros_driver
 ./setup.sh
+```
+```
 source ~/Documents/instal360_ws/install/setup.bash
 ros2 launch insta360_ros_driver bringup1.launch.py
 ```
