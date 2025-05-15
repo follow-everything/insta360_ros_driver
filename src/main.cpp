@@ -196,7 +196,7 @@ public:
             auto desc = list[i];
             std::cout << "serial:" << desc.serial_number << "\t"
                 << "camera type:" << int(desc.camera_type) << "\t"
-                << "lens type:" << int(desc.lens_type) << std::endl;
+                << std::endl;
         }
         if (list.size() <= 0) {
             std::cerr << "no device found." << std::endl;
@@ -212,7 +212,7 @@ public:
         cam->SetStreamDelegate(delegate);
         discovery.FreeDeviceDescriptors(list);
         std::cout << "Successfully opened camera..." << std::endl;
-        auto camera_type = cam->GetCameraType();
+        // auto camera_type = cam->GetCameraType();
         auto start = time(NULL);
         cam->SyncLocalTimeToCamera(start);
         ins_camera::LiveStreamParam param;
